@@ -1,0 +1,151 @@
+.gradient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #FE7A36, #3652AD, #4f02e9, #43aefa);
+    background-size: 300% 200%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    box-shadow: 1px 15px 15px 1px rgba(0, 0, 0, 0.22);
+    margin: 32px;
+    border-radius: 16px;
+    width: 673px;
+    background-color: #fff;
+}
+
+.card-item {
+    flex: 1;
+    padding: 32px;
+}
+
+table caption {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+table {
+    border: 1px solid rgba(201, 195, 195, 0.396);
+}
+
+.aling-left {
+    text-align: left;
+}
+
+.aling-center {
+    text-align: center;
+}
+
+th {
+    font-weight: 600;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+	vertical-align: center;
+}
+
+
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-salario {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0 8px 8px;
+}
+
+.input-salario {
+    border: 1px solid lightgray;
+    background-color: rgb(211, 211, 211, 0.558);
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 18px;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.100);
+    white-space: nowrap;
+    outline: none;
+}
+
+.calcular-button {
+    padding: 1em;
+    font-weight: 600;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(231, 112, 69);
+    border: none;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.200);
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.calcular-button:hover {
+    background-color: rgb(242, 88, 32);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
+    gap: 10px;
+    width: 100%;
+}
+
+.resultado #total {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.resultado #pagar {
+    font-weight: 900;
+    font-size: 2em;
+}
