@@ -7,59 +7,60 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" >
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/script.js" defer></script>
 </head>
 <body class="gradient">
     <main>
       <h1>Calculadora de Imposto de Renda</h1>
-      <div class="card">
-        <div class="card-item">
-            <table>
-                <caption>Tabela Imposto de Renda 2024</caption>
-                <tr> 
-                    <th class="aling-left">Renda</th>
-                    <th class="aling-center">% Imposto</th>
-                </tr>
-                <tr>
-                    <td class="aling-left">De R$ 0 a R$ 2.259,20</td>
-                    <td class="aling-center">Isento</td>
-                </tr>
-                <tr>
-                    <td class="aling-left">De R$ 2.259,21 a R$ 2.826,65</td>
-                    <td class="aling-center">7,5%</td>
-                </tr>
-                <tr>
-                    <td class="aling-left">De R$ 2.826,66 a R$ 3.751,05</td>
-                    <td class="aling-center">15%</td> 
-                </tr>
-                <tr>
-                    <td class="aling-left">De R$ 3.751,06 a R$ 4.664,68</td>
-                    <td class="aling-center">22,5%</td> 
-                </tr>
-                <tr>
-                    <td class="aling-left">Acima de R$ 4.664,68</td>
-                    <td class="aling-center">27,5%</td>
-                </tr>
-            </table>
-        </div>
-        <div class="card-item">
-            
-            <div class="card2">
-                <div class="formulario">
-                    <label class="text-salario">Salário</label>
-    
-                    <input class="input-salario" type="number" name="salario" id="salario" placeholder="Informe o salário" step="0.01" min="0">
-                    
-                    <button class="calcular-button" type="button" onclick="calcular()">Calcular</button>
-                </div>
-                <div class="resultado">
-                    <label id="total">Total a Pagar &#128071;</label>
-                    <!-- Usar por enquanto -->
-                    <h2 id="pagar">R$ 0,00</h2>
+        <div class="card">
+            <div class="card-item">
+                <table>
+                    <caption>Tabela Imposto de Renda 2024</caption>
+                    <tr> 
+                        <th class="aling-left">Renda</th>
+                        <th class="aling-center">% Imposto</th>
+                    </tr>
+                    <tr>
+                        <td class="aling-left">De R$ 0 a R$ 2.259,20</td>
+                        <td class="aling-center">Isento</td>
+                    </tr>
+                    <tr>
+                        <td class="aling-left">De R$ 2.259,21 a R$ 2.826,65</td>
+                        <td class="aling-center">7,5%</td>
+                    </tr>
+                    <tr>
+                        <td class="aling-left">De R$ 2.826,66 a R$ 3.751,05</td>
+                        <td class="aling-center">15%</td> 
+                    </tr>
+                    <tr>
+                        <td class="aling-left">De R$ 3.751,06 a R$ 4.664,68</td>
+                        <td class="aling-center">22,5%</td> 
+                    </tr>
+                    <tr>
+                        <td class="aling-left">Acima de R$ 4.664,68</td>
+                        <td class="aling-center">27,5%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-item">
+                
+                <div class="card2">
+                    <div class="formulario">
+                        <label class="text-salario">Salário</label>
+        
+                        <input class="input-salario" type="number" name="salario" id="salario" placeholder="Informe o salário" step="0.01" min="0">
+                        
+                        <button class="calcular-button" type="button" onclick="calcular()">Calcular</button>
+                    </div>
+                    <div class="resultado">
+                        <label id="total">Total a Pagar &#128071;</label>
+                        <!-- Usar por enquanto -->
+                        <h2 id="pagar">R$ 0,00</h2>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
     </main>
 </body>
 </html>
